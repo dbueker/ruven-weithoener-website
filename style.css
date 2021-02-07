@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  min-width: 320px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 80px;
+  margin: 80px 5% 0 5%;
+}
+
+p,
+li {
+  line-height: 1.5;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(140, 145, 170);
+  margin: 0;
+}
+
+h1 {
+  color: #152359;
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  color: #152359;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+}
+
+h3 {
+  color: #152359;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+}
+
+a,
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+.textLink {
+  margin-left: 2px;
+  color: #ee6e4c;
+  transition: 0.2s ease-out;
+}
+
+.textLink:hover {
+  background-color: rgba(205, 210, 235, 0.2);
+  cursor: pointer;
+}
+
+li::marker {
+  color: #ee6e4c;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center start;
+}
+
+.introText {
+  margin-bottom: 40px;
+}
+
+/*Home Section*/
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.content {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  max-width: 70%;
+}
+
+.videoHeadline {
+  margin: 0 0 32px 0;
+  color: white;
+  line-height: 1.1;
+  text-shadow: 1px 1px 8px rgba(21, 35, 89, 0.3);
+}
+
+.videoSubline {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: none;
+  margin: 0 0 8px 0;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(21, 35, 89, 0.3);
+}
+
+#videoButton {
+  /*position*/
+  font-size: 18px;
+  font-weight: 400;
+  padding: 16px 24px;
+  margin: 0 8px 8px 0;
+  width: fit-content;
+  height: fit-content;
+  min-width: 104px;
+  float: left;
+
+  /*styling*/
+  border-width: 0;
+  outline: none;
+  background-color: rgba(205, 210, 235, 0.2);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+#videoButton:hover {
+  background-color: #ee6e4c;
+}
+
+.videoButtonContent {
+  display: flex;
+  align-items: center;
+}
+
+.soundIcon {
+  margin: 0 16px 0 0;
+}
+
+.videoButtonText {
+  color: white;
+  margin: 0;
+}
+
+/*About Section*/
+#aboutSection {
+  min-height: 100vh;
+}
+
+.darkText {
+  color: #152359;
+}
+
+#aboutImage {
+  width: 100%;
+  height: auto;
+  max-width: 420px;
+}
+
+/*Bands & Konzerte Section*/
+
+#bandSection {
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.termine {
+  width: 100%;
+}
+
+/*Button*/
+.button {
+  /*position*/
+  width: fit-content;
+  float: left;
+  margin: 0 0 32px 0;
+  padding: 16px 16px 16px 0;
+
+  /*styling*/
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.button:hover .icon {
+  margin: 0 12px 0 16px;
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 28px 0 0;
+  transition: 0.2s ease-out;
+}
+
+.buttonText {
+  color: #ee6e4c;
+}
+
+/*Bands Grid*/
+.bands {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+  grid-auto-rows: 200px;
+  justify-content: center;
+  width: 100%;
+}
+
+.bandItem {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  padding: 24px 16px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.bandItem .name {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 1px 1px 8px rgba(21, 35, 89, 0.3);
+}
+
+.bandItem:hover {
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0px, -2px, 0px);
+}
+
+#justAGlimpse {
+  background-image: url("./images/JustAGlimpse.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#johnWeithoener {
+  background-image: url("./images/JohnWeithoener.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#jazzorchesterOWL {
+  background-image: url("./images/JazzOWL.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#lathyrus {
+  background-image: url("./images/Lathyrus.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#westfaliaBigBand {
+  background-image: url("./images/WestfaliaBB.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#danielUndRuven {
+  background-image: url("./images/DanielRuven.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*List Items*/
+
+article {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  place-items: start;
+  transition: 0.2s;
+  width: 100%;
+}
+
+article:hover {
+  background-color: white;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0px, -2px, 0px);
+}
+
+article .ort {
+  margin: 40px 0 4px 16px;
+  font-size: 18px;
+}
+
+article .uhrzeit {
+  margin: 40px 16px 4px 0px;
+  font-size: 18px;
+  justify-self: end;
+}
+
+article .name {
+  color: #152359;
+  margin: 0 16px 0 16px;
+  font-weight: 700;
+}
+
+article .datum {
+  margin: 0 16px 0 0;
+  justify-self: end;
+  text-align: end;
+}
+
+article .linie {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(140, 145, 170, 0.3);
+  margin: 40px 0 0 0;
+  grid-column: 1 / span 2;
+}
+
+/*workshopSection*/
+#workshopSection {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*Footer*/
+footer {
+  min-height: 120px;
+  max-width: 100%;
+  grid-template-columns: 3fr 1fr;
+  display: grid;
+  align-items: center;
+  background-color: white;
+  margin-top: 120px;
+  padding-bottom: 24px;
+}
+
+.linkeSeite {
+  display: flex;
+}
+
+.footerItem {
+  font-size: 16px;
+  margin-right: 16px;
+  transition: 0.2s;
+}
+
+.footerItem:hover {
+  color: #ee6e4c;
+}
+
+.rechteSeite {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: end;
+}
+
+.rechteSeite .footerItem {
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin: 64px 32px 0 32px;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin: 0 0 24px 0;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  /*Home Section*/
+  #home {
+    margin-bottom: 80px;
+  }
+
+  .content {
+    bottom: 32px;
+    left: 32px;
+    right: 32px;
+  }
+
+  /*About Section*/
+  .imageContainer {
+    justify-self: center;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 40px 16px 0 16px;
+  }
+
+  p,
+  li {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  /*Home Section*/
+  .subline {
+    font-size: 24px;
+    margin: 0 0 8px 0;
+  }
+
+  .content {
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+    right: 24px;
+  }
+
+  /*List Items*/
+  article .ort,
+  article .uhrzeit {
+    font-size: 16px;
+  }
+
+  /*Bands Grid*/
+  .bands {
+    grid-template-columns: repeat(auto-fit, 1fr);
+  }
+
+  /*Footer*/
+  footer {
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-top: 24px;
+    padding-bottom: 64px;
+  }
+
+  .linkeSeite,
+  .rechteSeite {
+    place-items: center;
+  }
+}

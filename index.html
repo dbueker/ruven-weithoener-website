@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Ruven Weithöner</title>
+</head>
+<body>
+    <div id="home">
+        <video id="video" type="video/mp4" src="./images/RuvenWeithoenerStill.mp4" autoPlay muted loop playsInline></video>
+
+        <!-- Video Text -->
+        <div class="content">
+            <h2 class="videoSubline">Jazz-Trompeter & Musiklehrer</h2>
+            <h1 class="videoHeadline">Ruven Weithöner</h1>
+
+            <!-- Video Button -->
+            <div id="videoButton" onclick="mute()">
+                <div class="videoButtonContent">
+                  <div class="soundIcon"><img id="icon" src="./images/SoundOn.png" alt="ArrowRight" width="100%" height="auto" /></div>
+                  <p class="videoButtonText">Musik abspielen</p>
+                </div>
+                <script>
+                    let video = document.getElementById("video");
+                    let icon = document.getElementById("icon");
+
+                    function mute(){
+                        if (video.muted)
+                            {
+                                video.muted = false;
+                                icon.src = "./images/SoundOff.png";
+                            }
+                            else 
+                            {
+                                video.muted = true;
+                                icon.src = "./images/SoundOn.png";
+                            }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section id="aboutSection">
+            <div class="imageContainer">
+                <img id="aboutImage" src="./images/RuvenAbout.jpg" alt="Bild von Ruven Weithöner"/>
+            </div>
+            <div class="aboutItem">
+                <p class="introText"><span class="darkText">Hi! Ich bin Ruven - Jazz-Trompeter, Komponist und Musiklehrer.</span><br/>
+                Meiner musikalischen Leidenschaft gehe ich zur Zeit als aktiver Teil der lebhaften Essener Jazz-Szene nach.
+                Zusätzlich zu meinem Studium der Jazz-Trompete und der Arbeit mit unterschiedlichen bandItems unterrichte ich 
+                das Trompetenspiel in Privatstunden und sorgfältig konzipierten Workshops. Aktuell bin ich Stipendiat der Firma 
+                <a class="textLink" href="https://www.luettke-blasinstrumente.de/elephant-trompete">Lüttke Blasinstrumente</a> und spiele das Modell "Elephant". 
+                Für Buchungen oder andere Anfragen schreib mir einfach eine <a class="textLink" href="mailto:ruven.w@web.de">Nachricht.</a></p>
+                
+                <!-- Button -->
+                <a class="button" href="./about.html">
+                    <div class="buttonContent">
+                      <div class="icon"><img src="./images/ArrowRight.png" alt="ArrowRight" width="100%" height="auto" /></div>
+                      <p class="buttonText">Mehr erfahren</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="bandSection">
+            <div>
+                <h2>Bands & Konzerte</h2>
+                <p class="introText">Ich spiele in diversen Bands und freue mich, dich auf einem meiner Konzerte zu begrüßen. 
+                    Ob Jazz-Festival oder Auftritt in einer Blues-Bar, Einzelheiten kannst du der jeweiligen Veranstaltung entnehmen.</p>
+            </div>
+
+            <!-- Bands -->
+            <div class="bands">
+                <a class="bandItem" id="loosExtended" href="https://soundcloud.com/loos-extended">
+                    <p class="name">loos. extended</p>
+                </a>
+                <a class="bandItem" id="justAGlimpse" href="https://philippwisser.bandcamp.com/album/just-a-glimpse-demo">
+                <p class="name">Just A Glimpse</p>
+                </a>
+                <a class="bandItem" id="johnWeithoener" href="https://www.youtube.com/watch?v=sgMbEkHo0n8&ab_channel=NicklasJohn">
+                <p class="name">John / Weithöner</p>
+                </a>
+                <a class="bandItem" id="jazzorchesterOWL" href="https://de-de.facebook.com/JazzorchesterOwl/">
+                <p class="name">Jazz Orchester OWL</p>
+                </a>
+                <a class="bandItem" id="lathyrus" href="https://www.facebook.com/lathyrusmusic/?hc_ref=ARSLkMFXOHFOqb3DV3DG2SV4qkuI1iY5Hqj-qPVBW8oYRI8_U3K4OW1SqK4CQGFBBzc&fref=nf&__tn__=kC-R">
+                <p class="name">Lathyrus</p>
+                </a>
+                <a class="bandItem" id="westfaliaBigBand" href="https://www.westfalia-big-band.de/">
+                <p class="name">Westfalia Big Band</p>
+                </a>
+                <a class="bandItem" id="danielUndRuven" href="https://de-de.facebook.com/danielandruven">
+                <p class="name">Daniel & Ruven</p>
+                </a>
+            </div>
+
+            <!-- Konzert Termine -->
+            <div class="termine">
+                <a href="www.google.de">
+                    <article>
+                        <p class="ort">Bürgerplatz, Verl</p>
+                        <p class="uhrzeit">10:00 Uhr</p>
+                        <p class="name">Daniel & Ruven</p>
+                        <p class="datum">09.05.2021</p>
+                        <span class="linie"></span>
+                    </article>
+                </a>
+            </div>
+        </section>
+        <section id="workshopSection">
+            <h2>Workshops</h2>
+            <p class="introText">Ich veranstalte regelmäßig Workshops zu den Themen Jazz- und Blues-Improvisation und musikalischer und technischer Weiterentwicklung. Möchtest du 
+            teilnehmen oder hast Fragen zu einem Workshop, schreib mir einfach eine <a class="textLink" href="mailto:ruven.w@web.de">Nachricht.</a></p>
+            
+            <!-- Button -->
+            <a class="button" href="./workshops.html">
+                <div class="buttonContent">
+                  <div class="icon"><img src="./images/ArrowRight.png" alt="ArrowRight" width="100%" height="auto" /></div>
+                  <p class="buttonText">Mehr erfahren</p>
+                </div>
+            </a>
+
+            <!-- Workshop Termine -->
+            <div class="termine">
+                <a href="https://kurse.miz.org/junior-jazz-camp-fuer-junge-leute-zwischen-10-und-16-jahren-k52885">
+                    <article>
+                        <p class="ort">Landesmusikakademie, Heek</p>
+                        <p class="uhrzeit">10:00 Uhr</p>
+                        <p class="name">Junior Jazz Camp</p>
+                        <p class="datum">29.03. - 02.04.2021</p>
+                        <span class="linie"></span>
+                    </article>
+                </a>
+                    <article>
+                        <p class="ort">Haus am Turm, Essen</p>
+                        <p class="uhrzeit">10:00 Uhr</p>
+                        <p class="name">Workshop Jazz-Trompete</p>
+                        <p class="datum">16.10. - 17.10.2021</p>
+                        <span class="linie"></span>
+                    </article>
+            </div>
+        </section>
+        <footer>
+            <div class="linkeSeite">
+                <a href="mailto:ruven.w@web.de">
+                    <p class="footerItem">Mail</p>
+                </a>
+                <a href="https://www.youtube.com/user/Guit3r4Ever">
+                    <p class="footerItem">YouTube</p>
+                </a>
+                <a href="https://www.instagram.com/ruven_weithoener/">
+                    <p class="footerItem">Instagram</p>
+                </a>
+                <a href="https://www.facebook.com/ruven.weithoener">
+                    <p class="footerItem">Facebook</p>
+                </a>
+                <a href="https://open.spotify.com/artist/41Mkyg0Tx2ERqRMks4K64r?si=Y83XtSmcTRaWHiR__QnDZA">
+                    <p class="footerItem">Spotify</p>
+                </a>
+            </div>
+            <div class="rechteSeite">
+                <p class="footerItem">Impressum</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
