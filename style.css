@@ -397,6 +397,10 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .introText {
+    margin-bottom: 32px;
+  }
+
   /*Home Section*/
   #home {
     margin-bottom: 80px;
@@ -427,6 +431,10 @@ footer {
 
   h3 {
     font-size: 20px;
+  }
+
+  .introText {
+    margin-bottom: 16px;
   }
 
   /*Home Section*/
