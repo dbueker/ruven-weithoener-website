@@ -243,6 +243,12 @@ video {
   transform: translate3d(0px, -2px, 0px);
 }
 
+#loosExtended {
+  background-image: url("./images/loosExtended.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #justAGlimpse {
   background-image: url("./images/JustAGlimpse.jpg");
   background-repeat: no-repeat;
