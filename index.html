@@ -19,10 +19,11 @@
             <div id="videoButton" onclick="mute()">
                 <div class="videoButtonContent">
                   <div class="soundIcon"><img id="icon" src="./images/SoundOn.png" alt="ArrowRight" width="100%" height="auto" /></div>
-                  <p class="videoButtonText">Musik abspielen</p>
+                  <p class="videoButtonText">Musik anhören</p>
                 </div>
                 <script>
                     let video = document.getElementById("video");
+                    let text = document.getElementById("videoButtonText");
                     let icon = document.getElementById("icon");
 
                     function mute(){
@@ -30,11 +31,13 @@
                             {
                                 video.muted = false;
                                 icon.src = "./images/SoundOff.png";
+                                text.innerHTML = "Musik stummschalten";
                             }
                             else 
                             {
                                 video.muted = true;
                                 icon.src = "./images/SoundOn.png";
+                                text.innerHTML = "Musik anhören";
                             }
                     }
                 </script>
