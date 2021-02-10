@@ -151,7 +151,7 @@ video {
   margin: 0 16px 0 0;
 }
 
-.videoButtonText {
+#videoButtonText {
   color: white;
   margin: 0;
 }
