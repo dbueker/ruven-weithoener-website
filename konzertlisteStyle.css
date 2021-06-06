@@ -5,6 +5,16 @@ h2 {
   grid-column: 1 / span 2;
 }
 
+main {
+  min-height: 100vh;
+}
+
+#konzertlisteSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 0;
+}
+
 .termine {
   grid-column: 1 / span 2;
 }
