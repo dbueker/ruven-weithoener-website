@@ -1,20 +1,28 @@
 @import url("style.css");
 @import url("aboutStyle.css");
 
-h2 {
-  grid-column: 1 / span 2;
+section {
+  grid-template-columns: 1fr;
 }
 
-.termine {
-  grid-column: 1 / span 2;
+.absatz {
+  margin-bottom: 80px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.hygienekonzept {
+  margin-top: 40px;
+}
+
+#kontodaten {
+  list-style-type: none;
 }
 
 @media (max-width: 1024px) {
-  h2 {
-    grid-column: 1;
-  }
-
-  .termine {
+  .absatz {
     grid-column: 1;
   }
 }
