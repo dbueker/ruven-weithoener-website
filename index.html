@@ -7,7 +7,7 @@
     <script src="https://gumroad.com/js/gumroad-embed.js"></script>
     <title>Ruven Weithöner</title>
 </head>
-<body>
+<body onload="startTimer()">
     <div id="home">
         <video id="video" type="video/mp4" src="./images/ruven-solo.mp4" autoPlay muted loop playsInline></video>
 
@@ -22,7 +22,7 @@
                   <div class="soundIcon"><img id="icon" src="./images/SoundOn.png" alt="ArrowRight" width="100%" height="auto" /></div>
                   <p id="videoButtonText">Musik anhören</p>
                 </div>
-                <script>
+                <script type="text/javascript">
                     let video = document.getElementById("video");
                     let text = document.getElementById("videoButtonText");
                     let icon = document.getElementById("icon");
@@ -41,6 +41,21 @@
                                 text.innerHTML = "Musik anhören";
                             }
                     }
+
+                    // Image Gallery
+                    /*
+                    function displayNextImage() {
+                        x = (x === images.length - 1) ? 0 : x + 1;
+                        document.getElementById("imageGallery").src = images[x];
+                    }
+
+                    function startTimer() {
+                        setInterval(displayNextImage, 4500);
+                    }
+
+                    var images = [], x = -1;
+                    images[0] = "./images/workshopImage-1.jpg";
+                    images[1] = "./images/workshopImage-2.jpg";*/
                 </script>
             </div>
         </div>
@@ -146,6 +161,8 @@
             </a>
 
             <!-- Workshop Termine -->
+            <h3>Nächste Termine</h3>
+
             <div class="termine">
                 <a href="./workshops.html">
                     <article>
@@ -157,6 +174,24 @@
                     </article>
                 </a>
             </div>
+
+            <!-- Workshop Meinungen -->
+            <div class="meinungen">
+                <h3>Meinungen und Impressionen</h3>
+
+                <div class="meinungen-element">
+                    <p class="meinungen-zitat">Ich würde nicht nur nochmal teilnehmen sondern es auch jedem Trompeter diesen Workshop weiterempfehlen! [...] Ein perfektes Trainingswochenende mit jeder Menge Input und Spaß! Ich bin gerne wieder dabei!</p>
+                    <p class="meinungen-autor">Michael, Workshop vom 16.10.2021</p>
+                </div>
+
+                <div class="meinungen-element">
+                    <p class="meinungen-zitat">Der Wochenend-Workshop war intensiv und interessant. Es gab die Möglichkeit, Einzelunterricht zu nehmen, zu improvisieren, den Stil zu verbessern und den Jazz aus der Sicht der bekannten Trompeter kennen zu lernen. Ruven ist ausgezeichnet!</p>
+                    <p class="meinungen-autor">Gianluca, Workshop vom 16.10.2021</p>
+                </div>
+
+                <!-- <img id="imageGallery" src="./images/workshopImage-1.jpg"/> -->
+            </div>
+
         </section>
 
         <!-- Shop Section -->

@@ -42,10 +42,10 @@ h2 {
 
 h3 {
   color: #152359;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 900;
-  font-style: italic;
-  text-transform: uppercase;
+  /*font-style: italic;
+  text-transform: uppercase;*/
   margin: 0 0 12px 0;
 }
 
@@ -332,10 +332,30 @@ article .linie {
   grid-column: 1 / span 2;
 }
 
-/*workshopSection*/
+/*workshopSection---------------------------------------------------------------------*/
 #workshopSection {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.meinungen {
+  margin-top: 64px;
+}
+
+.meinungen-element {
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.meinungen-zitat {
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.meinungen-autor {
+  text-align: right;
+  color: #152359;
 }
 
 /*shopSection*/
@@ -405,7 +425,7 @@ footer {
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   section {
@@ -445,7 +465,7 @@ footer {
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .introText {
