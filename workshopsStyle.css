@@ -21,8 +21,48 @@ section {
   list-style-type: none;
 }
 
+.meinungen {
+  margin-top: 64px;
+}
+
+.meinungen-element {
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.meinungen-zitat {
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.meinungen-autor {
+  text-align: right;
+  color: #152359;
+}
+
+.imageGalleryWrapper {
+  margin: auto;
+}
+
+#imageGallery {
+  background-image: url("./images/workshopImage-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 50vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+}
+
 @media (max-width: 1024px) {
   .absatz {
     grid-column: 1;
+  }
+
+  #imageGallery {
+    height: 60vh;
   }
 }

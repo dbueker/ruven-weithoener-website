@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="workshopsStyle.css">
     <title>Workshops</title>
 </head>
-<body>
+<body onload="startTimer()">
     <main>
         <a class="secondaryButton" href="./index.html">
             <div class="secondaryButtonContent">
@@ -69,6 +69,23 @@
                         <span class="linie"></span>
                     </article>
             </div>
+
+            <!-- Workshop Meinungen -->
+            <div class="meinungen">
+                <h2>Meinungen und Impressionen</h2>
+
+                <div class="meinungen-element">
+                    <p class="meinungen-zitat">Ich würde nicht nur nochmal teilnehmen sondern es auch jedem Trompeter diesen Workshop weiterempfehlen! [...] Ein perfektes Trainingswochenende mit jeder Menge Input und Spaß! Ich bin gerne wieder dabei!</p>
+                    <p class="meinungen-autor">Michael, Workshop vom 16.10.2021</p>
+                </div>
+
+                <div class="meinungen-element">
+                    <p class="meinungen-zitat">Der Wochenend-Workshop war intensiv und interessant. Es gab die Möglichkeit, Einzelunterricht zu nehmen, zu improvisieren, den Stil zu verbessern und den Jazz aus der Sicht der bekannten Trompeter kennen zu lernen. Ruven ist ausgezeichnet!</p>
+                    <p class="meinungen-autor">Gianluca, Workshop vom 16.10.2021</p>
+                </div>
+
+                    <div id="imageGallery"></div>
+            </div>
            
         </section>
         <footer>
@@ -96,5 +113,8 @@
             </div>
         </footer>
     </main>
+
+<script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>

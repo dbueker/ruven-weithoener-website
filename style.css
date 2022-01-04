@@ -230,6 +230,9 @@ video {
   padding: 24px 16px;
   text-align: center;
   transition: 0.2s;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bandItem .name {
@@ -245,44 +248,30 @@ video {
 
 #loosExtended {
   background-image: url("./images/loosExtended.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #justAGlimpse {
   background-image: url("./images/JustAGlimpse.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #johnWeithoener {
   background-image: url("./images/JohnWeithoener.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #jazzorchesterOWL {
   background-image: url("./images/JazzOWL.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #lathyrus {
   background-image: url("./images/Lathyrus.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #westfaliaBigBand {
   background-image: url("./images/WestfaliaBB.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #danielUndRuven {
   background-image: url("./images/DanielRuven.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*List Items*/
@@ -332,30 +321,10 @@ article .linie {
   grid-column: 1 / span 2;
 }
 
-/*workshopSection---------------------------------------------------------------------*/
+/*workshopSection*/
 #workshopSection {
   display: grid;
   grid-template-columns: 1fr;
-}
-
-.meinungen {
-  margin-top: 64px;
-}
-
-.meinungen-element {
-  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
-  padding: 24px;
-  margin: 24px 0;
-}
-
-.meinungen-zitat {
-  font-style: italic;
-  margin-bottom: 16px;
-}
-
-.meinungen-autor {
-  text-align: right;
-  color: #152359;
 }
 
 /*shopSection*/
