@@ -1,4 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap");*/
+@font-face {
+  font-family: Lato;
+  font-weight: 900;
+  font-style: italic;
+  src: url(./fonts/Lato/Lato-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 700;
+  font-style: italic;
+  src: url(./fonts/Lato/Lato-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 700;
+  font-style: normal;
+  src: url(./fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: normal;
+  src: url(./fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: italic;
+  src: url(./fonts/Lato/Lato-Italic.ttf);
+}
 
 body {
   font-family: "Lato", sans-serif;
