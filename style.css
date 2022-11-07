@@ -1,4 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap");
+/*------------ Fonts import ------------*/
+@font-face {
+  font-family: Lato;
+  font-weight: 900;
+  font-style: italic;
+  src: url(./fonts/Lato/Lato-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 700;
+  font-style: italic;
+  src: url(./fonts/Lato/Lato-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 700;
+  font-style: normal;
+  src: url(./fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: normal;
+  src: url(./fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato;
+  font-weight: 400;
+  font-style: italic;
+  src: url(./fonts/Lato/Lato-Italic.ttf);
+}
+/*------------ Fonts import ------------*/
 
 body {
   font-family: "Lato", sans-serif;
@@ -44,8 +75,6 @@ h3 {
   color: #152359;
   font-size: 26px;
   font-weight: 900;
-  /*font-style: italic;
-  text-transform: uppercase;*/
   margin: 0 0 12px 0;
 }
 
@@ -270,8 +299,8 @@ video {
   background-image: url("./images/WestfaliaBB.jpg");
 }
 
-#danielUndRuven {
-  background-image: url("./images/DanielRuven.jpg");
+#quintett {
+  background-image: url("./images/Quintett.jpg");
 }
 
 #elAfinque {
