@@ -37,7 +37,7 @@
                         <p class="datum">07.04.2025</p>
                         <span class="linie"></span>
                         </article>
-                        
+
                         <a href="" target="https://www.hr-bigband.de/konzerte/konzerte-2024-25/familienkonzert-der-elefant-der-die-welt-zum-klingen-brachte,familienkonzert-136.html">
                             <article>
                             <p class="ort">hr-Sendesaal, Frankfurt am Main</p>
@@ -1118,5 +1118,63 @@
         </div>
     </footer>
     </main>
+    <!-- filepath: /Users/ruvenweithoner/ruven-weithoener-website/ruven-weithoener-website/konzertliste.html -->
+<script>
+function parseDatum(datum) {
+    // Unterstützt Formate wie "25.03. - 29.03.2024", "03.- 07.04.2023", "26.08.2022", "14.8.2022"
+    datum = datum.trim();
+    // Bereich: nimm das erste Datum
+    let match = datum.match(/^(\d{1,2})\.(?:\d{1,2}\.|-)\s*-\s*(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+    if (match) {
+        return new Date(match[4], match[3] - 1, match[2]);
+    }
+    // Bereich mit Monatsangabe nur vorne: "03.- 07.04.2023"
+    match = datum.match(/^(\d{1,2})\.\-\s*(\d{1,2})\.(\d{2})\.(\d{4})$/);
+    if (match) {
+        return new Date(match[4], match[3] - 1, match[2]);
+    }
+    // Bereich mit "&": "26. & 27.03.2022"
+    match = datum.match(/^(\d{1,2})\.\s*&\s*(\d{1,2})\.(\d{2})\.(\d{4})$/);
+    if (match) {
+        return new Date(match[4], match[3] - 1, match[2]);
+    }
+    // Bereich mit "-": "11. - 15.04.2022"
+    match = datum.match(/^(\d{1,2})\.\s*-\s*(\d{1,2})\.(\d{2})\.(\d{4})$/);
+    if (match) {
+        return new Date(match[4], match[3] - 1, match[1]);
+    }
+    // Einzelnes Datum: "14.8.2022" oder "26.08.2022"
+    match = datum.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+    if (match) {
+        return new Date(match[3], match[2] - 1, match[1]);
+    }
+    // Fallback: sehr weit in der Vergangenheit
+    return new Date(1900, 0, 1);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const termineDiv = document.querySelector('.termine');
+    if (!termineDiv) return;
+    // Alle Artikel sammeln
+    const articles = Array.from(termineDiv.querySelectorAll('article'));
+    // Sortieren
+    articles.sort((a, b) => {
+        const da = parseDatum(a.querySelector('.datum').textContent);
+        const db = parseDatum(b.querySelector('.datum').textContent);
+        return db - da; // absteigend
+    });
+    // Vorhandene Artikel entfernen
+    termineDiv.innerHTML = '';
+    // Sortierte Artikel wieder einfügen (inkl. evtl. Link-Wrapper)
+    articles.forEach(article => {
+        // Falls das article in einem <a> liegt, dieses mitnehmen
+        if (article.parentElement.tagName.toLowerCase() === 'a') {
+            termineDiv.appendChild(article.parentElement);
+        } else {
+            termineDiv.appendChild(article);
+        }
+    });
+});
+</script>
 </body>
 </html>
